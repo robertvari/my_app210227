@@ -4,6 +4,7 @@ import "./Counter.css"
 function Counter(props) {
     // let count = 0
     const [count, set_count] = useState(0)
+    const [achievement, set_achievement] = useState("")
 
     const set_count_action = () => {
         set_count(count + 1)
@@ -19,13 +20,14 @@ function Counter(props) {
 
     useEffect(() => {
         if(count === 10){
-            console.log("Keep going!")
+            set_achievement("Keep going")
         }
     }, [count])
 
     return (
         <div className="counter-container">
             <h1>Count: {count}</h1>
+            <h3>{achievement}</h3>
             <button onClick={set_count_action}>Count</button>
         </div>
     );
