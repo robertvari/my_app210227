@@ -1,7 +1,11 @@
+import Hello from "./components/Hello";
+
 function App() {
   return (
     <div className="App">
-      <h1>My App</h1>
+      <Hello name="Robert" address="Budapest"/>
+      <Hello name="Csaba" address="Debrecen"/>
+      <Hello name="Tamás" address="Pécs"/>
     </div>
   );
 }
