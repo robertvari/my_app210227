@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import "./Counter.css"
 
 function Counter(props) {
     // let count = 0
@@ -9,7 +10,7 @@ function Counter(props) {
     }
 
     return (
-        <div className={"counter-container"}>
+        <div className="counter-container">
             <h1>Count: {count}</h1>
             <button onClick={set_count_action}>Count</button>
         </div>
