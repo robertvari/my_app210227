@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import "./Counter.css"
 
 function Counter(props) {
@@ -8,6 +8,20 @@ function Counter(props) {
     const set_count_action = () => {
         set_count(count + 1)
     }
+
+    useEffect(() => {
+        console.log("Something is changed")
+    })
+
+    useEffect(() => {
+        console.log("Counter loaded")
+    }, [])
+
+    useEffect(() => {
+        if(count === 10){
+            console.log("Keep going!")
+        }
+    }, [count])
 
     return (
         <div className="counter-container">

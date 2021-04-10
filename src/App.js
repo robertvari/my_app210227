@@ -5,16 +5,6 @@ function App() {
     <div className="App">
         <div className="content-container">
               <Counter/>
-              <Counter/>
-              <Counter/>
-              <Counter/>
-              <Counter/>
-              <Counter/>
-              <Counter/>
-              <Counter/>
-              <Counter/>
-              <Counter/>
-              <Counter/>
         </div>
     </div>
   );
